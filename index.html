@@ -55,7 +55,11 @@
   .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
   .logo{font-family:"Noto Serif JP",serif;font-size:21px;font-weight:600;letter-spacing:.12em}
   .logo small{display:block;font-size:10px;letter-spacing:.3em;color:var(--brown-soft);font-family:"Zen Kaku Gothic New"}
+  .nav-right{display:flex;align-items:center;gap:20px}
   .nav-links{display:flex;gap:28px;align-items:center;font-size:14px}
+  .resv-badge{font-size:12px;letter-spacing:.12em;color:var(--clay-dark);
+    border:1px solid var(--clay);border-radius:999px;padding:5px 14px;white-space:nowrap;
+    background:rgba(255,255,255,.4)}
   .nav-links a{color:var(--brown-soft);transition:color .2s}
   .nav-links a:hover{color:var(--clay)}
   .btn{display:inline-block;background:var(--clay);color:#fff;padding:11px 26px;border-radius:999px;
@@ -185,6 +189,9 @@
 
   @media(max-width:860px){
     .nav-links{display:none}
+    .nav-right{gap:10px}
+    .resv-badge{font-size:11px;padding:4px 11px;letter-spacing:.08em}
+    .btn{padding:9px 18px;font-size:13px}
     .about-grid,.info-grid{grid-template-columns:1fr;gap:40px}
     section.block{padding:80px 0}
     .hero{min-height:auto;padding:130px 0 90px}
@@ -196,14 +203,17 @@
 <header>
   <div class="wrap nav">
     <div class="logo">酵素風呂 いちか<small>ICHIKA ENZYME BATH</small></div>
-    <nav class="nav-links">
-      <a href="#about">酵素風呂とは</a>
-      <a href="#effects">効果</a>
-      <a href="#price">料金</a>
-      <a href="#flow">ご利用の流れ</a>
-      <a href="#info">店舗情報</a>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="#about">酵素風呂とは</a>
+        <a href="#effects">効果</a>
+        <a href="#price">料金</a>
+        <a href="#flow">ご利用の流れ</a>
+        <a href="#info">店舗情報</a>
+      </nav>
+      <span class="resv-badge">完全予約制</span>
       <a href="#contact" class="btn">ご予約</a>
-    </nav>
+    </div>
   </div>
 </header>
 
