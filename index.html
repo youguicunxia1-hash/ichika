@@ -53,7 +53,7 @@
     background:rgba(250,245,238,.92);backdrop-filter:blur(8px);
     border-bottom:1px solid var(--line)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
-  .logo{font-family:"Noto Serif JP",serif;font-size:21px;font-weight:600;letter-spacing:.12em}
+  .logo{font-family:"Noto Serif JP",serif;font-size:21px;font-weight:600;letter-spacing:.12em;white-space:nowrap}
   .logo small{display:block;font-size:10px;letter-spacing:.3em;color:var(--brown-soft);font-family:"Zen Kaku Gothic New"}
   .nav-right{display:flex;align-items:center;gap:20px}
   .nav-links{display:flex;gap:28px;align-items:center;font-size:14px}
@@ -63,7 +63,7 @@
   .nav-links a{color:var(--brown-soft);transition:color .2s}
   .nav-links a:hover{color:var(--clay)}
   .btn{display:inline-block;background:var(--clay);color:#fff;padding:11px 26px;border-radius:999px;
-    font-size:14px;font-weight:500;letter-spacing:.06em;transition:.25s;border:1px solid var(--clay)}
+    font-size:14px;font-weight:500;letter-spacing:.06em;transition:.25s;border:1px solid var(--clay);white-space:nowrap}
   .btn:hover{background:var(--clay-dark);border-color:var(--clay-dark)}
   .btn-outline{background:transparent;color:var(--clay)}
   .btn-outline:hover{background:var(--clay);color:#fff}
@@ -195,6 +195,16 @@
     .about-grid,.info-grid{grid-template-columns:1fr;gap:40px}
     section.block{padding:80px 0}
     .hero{min-height:auto;padding:130px 0 90px}
+  }
+  @media(max-width:460px){
+    .wrap{padding:0 16px}
+    .nav{height:60px}
+    .logo{font-size:15.5px;letter-spacing:.02em}
+    .logo small{font-size:9px;letter-spacing:.18em}
+    .nav-right{gap:7px}
+    .resv-badge{font-size:10px;padding:4px 8px;letter-spacing:0}
+    .btn{padding:7px 13px;font-size:12px;letter-spacing:.02em}
+    .hero{padding:110px 0 80px}
   }
 </style>
 </head>
