@@ -157,6 +157,17 @@
   .v-card p{font-size:14.5px;color:var(--brown-soft);margin-bottom:18px}
   .v-card .who{font-size:13px;color:var(--brown);font-weight:500}
 
+  /* faq */
+  .faq-list{max-width:760px;margin:0 auto}
+  .faq{border-bottom:1px solid var(--line);padding:26px 6px}
+  .faq:first-child{border-top:1px solid var(--line)}
+  .faq .q{display:flex;gap:14px;align-items:baseline;font-size:16.5px;font-weight:500;
+    font-family:"Noto Serif JP",serif;letter-spacing:.04em}
+  .faq .q::before{content:"Q";color:var(--clay);font-size:18px;font-family:"Noto Serif JP"}
+  .faq .a{display:flex;gap:14px;align-items:baseline;margin-top:12px;font-size:14.5px;
+    color:var(--brown-soft)}
+  .faq .a::before{content:"A";color:var(--gold);font-size:16px;font-family:"Noto Serif JP";font-weight:500}
+
   /* info */
   .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
   .info dl{display:grid;grid-template-columns:90px 1fr;row-gap:18px;font-size:15px}
@@ -215,6 +226,7 @@
         <a href="#effects">効果</a>
         <a href="#price">料金</a>
         <a href="#flow">ご利用の流れ</a>
+        <a href="#faq">はじめての方へ</a>
         <a href="#info">店舗情報</a>
       </nav>
       <span class="resv-badge">完全予約制</span>
@@ -232,7 +244,7 @@
       <a href="#contact" class="btn">はじめてのご予約</a>
       <a href="#about" class="btn btn-outline">酵素風呂を知る</a>
     </div>
-    <div class="place">KOCHI · SUKUMO &nbsp;|&nbsp; 米ぬか100%の酵素風呂</div>
+    <div class="place">KOCHI · SUKUMO &nbsp;|&nbsp; 米ぬか100%の酵素風呂 &nbsp;|&nbsp; 手ぶらでOK・下着セット込み</div>
   </div>
 </section>
 
@@ -243,7 +255,7 @@
       <div>
         <p class="label" style="text-align:left">ABOUT ENZYME BATH</p>
         <h2>酵素風呂って、<br>なんだろう。</h2>
-        <p>酵素風呂は、米ぬかやおがくずを微生物の力で発酵させ、その発酵熱だけで身体を温める自然の温熱浴です。その温度はおよそ60〜70度。けれど蒸し暑さはなく、ふんわりと包まれるような心地よさです。</p>
+        <p>酵素風呂は、米ぬかやおがくずを微生物の力で発酵させ、その発酵熱だけで身体を温める自然の温熱浴です。ぬかの中はおよそ60〜70度。けれど空気と違って熱く感じにくく、肌が感じるのは40度前後のやわらかな温かさ。ふんわりと包まれるような心地よさです。</p>
         <p>15分ほど身をうずめるだけで、じんわりと汗が流れ、まるで遠赤外線のサウナ数時間ぶんとも言われるほど。化学的な熱ではない、生きた発酵のぬくもりが、身体の奥深くまで届きます。</p>
         <p>いちかでは、地元・高知の米ぬかを使い、毎日丁寧に手を入れて発酵を育てています。</p>
       </div>
@@ -254,7 +266,7 @@
 <section class="block effects" id="effects">
   <div class="wrap">
     <p class="label">EFFECTS</p>
-    <h2 class="head">こんな方に、選ばれています</h2>
+    <h2 class="head">キレイになるための秘密が、<br>ココにある。</h2>
     <p class="lead">めぐりを整え、芯から温める酵素風呂。日々の小さな不調に、やさしく寄り添います。</p>
     <div class="eff-grid">
       <div class="eff-card"><div class="eff-ic">❄</div><h3>冷えが気になる</h3><p>手足の先まで届く発酵熱で、慢性的な冷えをやわらげ、温まりやすい身体へ。</p></div>
@@ -340,6 +352,32 @@
   </div>
 </section>
 
+<section class="block" id="faq">
+  <div class="wrap">
+    <p class="label">FOR FIRST-TIMERS</p>
+    <h2 class="head">はじめての方へ</h2>
+    <p class="lead">よくいただくご質問にお答えします。ほかにもご不明な点は、お気軽にお電話ください。</p>
+    <div class="faq-list">
+      <div class="faq">
+        <p class="q">熱くないですか？のぼせやすいのですが…</p>
+        <p class="a">ぬかの中は60〜70度ですが、肌が感じるのは40度前後のやわらかな温かさ。サウナが苦手な方にも「これなら心地いい」と好評です。途中で手足を出して調節もできます。</p>
+      </div>
+      <div class="faq">
+        <p class="q">持ち物は必要ですか？</p>
+        <p class="a">手ぶらでお越しいただけます。入浴用の下着セット（ショーツ・キャップ 他）は料金に含まれています。</p>
+      </div>
+      <div class="faq">
+        <p class="q">時間はどのくらいかかりますか？</p>
+        <p class="a">入浴は約15分。お着替えやカウンセリング、入浴後のひと休みを含めて、全体で40〜60分ほどを目安にお越しください。</p>
+      </div>
+      <div class="faq">
+        <p class="q">どのくらいのペースで通うといいですか？</p>
+        <p class="a">まずは週1回ほどのペースがおすすめです。回数券（3回・5回・10回）をご用意していますので、続けやすい形でご利用ください。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="block" id="info">
   <div class="wrap">
     <p class="label">SHOP INFO</p>
@@ -378,6 +416,7 @@
       <a href="#effects">効果</a>
       <a href="#price">料金</a>
       <a href="#flow">ご利用の流れ</a>
+      <a href="#faq">はじめての方へ</a>
       <a href="#info">店舗情報</a>
       <a href="#contact">ご予約</a>
     </div>
