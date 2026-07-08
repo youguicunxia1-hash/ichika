@@ -72,8 +72,8 @@
   /* hero */
   .hero{position:relative;min-height:100vh;display:flex;align-items:center;
     background:
-      radial-gradient(120% 90% at 80% 10%, rgba(201,167,90,.18), transparent 55%),
-      linear-gradient(160deg,#F6EADB 0%, #E8D6BE 60%, #DDBF9E 100%);
+      linear-gradient(100deg, rgba(250,243,232,.95) 0%, rgba(248,238,222,.85) 45%, rgba(240,222,196,.55) 100%),
+      url(images/exterior.jpg) center/cover no-repeat;
     overflow:hidden;padding-top:68px}
   .hero::after{content:"";position:absolute;right:-120px;bottom:-120px;width:520px;height:520px;
     border-radius:50%;background:radial-gradient(circle,rgba(181,97,58,.16),transparent 70%)}
@@ -95,13 +95,9 @@
   /* about */
   .about{background:var(--cream)}
   .about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
-  .about-visual{aspect-ratio:4/3;border-radius:20px;
-    background:linear-gradient(150deg,#C98C5A,#A85E37);position:relative;overflow:hidden;
+  .about-visual{aspect-ratio:4/3;border-radius:20px;position:relative;overflow:hidden;
     box-shadow:0 30px 60px -30px rgba(142,74,43,.5)}
-  .about-visual span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-    color:rgba(255,255,255,.92);font-family:"Noto Serif JP";font-size:24px;letter-spacing:.2em;text-align:center}
-  .about-visual::before{content:"";position:absolute;width:240px;height:240px;border-radius:50%;
-    background:rgba(255,255,255,.12);top:-60px;left:-40px}
+  .about-visual img{width:100%;height:100%;object-fit:cover;display:block}
   .about h2{font-size:30px;line-height:1.7;margin-bottom:24px}
   .about p{color:var(--brown-soft);margin-bottom:18px}
 
@@ -123,6 +119,12 @@
   .commit h3{font-size:21px;margin-bottom:14px;line-height:1.6}
   .commit p{font-size:14.5px;color:var(--brown-soft)}
   .commit-line{width:36px;height:2px;background:var(--clay);margin-bottom:20px}
+
+  /* facility gallery */
+  .gal-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+  .gal{border-radius:14px;overflow:hidden;background:var(--cream);border:1px solid var(--line)}
+  .gal img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+  .gal p{font-size:13px;color:var(--brown-soft);padding:10px 14px;text-align:center}
 
   /* price */
   .price{background:linear-gradient(165deg,#473A2E,#2E251C);color:#F3E9DA}
@@ -251,7 +253,7 @@
 <section class="block about" id="about">
   <div class="wrap">
     <div class="about-grid">
-      <div class="about-visual"><span>米ぬか酵素風呂<br>ICHIKA</span></div>
+      <div class="about-visual"><img src="images/lounge1.jpg" alt="酵素風呂いちかの店内 木の温もりある待合スペース" loading="lazy"></div>
       <div>
         <p class="label" style="text-align:left">ABOUT ENZYME BATH</p>
         <h2>酵素風呂って、<br>なんだろう。</h2>
@@ -286,6 +288,21 @@
       <div class="commit"><p class="num">01</p><div class="commit-line"></div><h3>地元・高知の<br>米ぬか100%</h3><p>香料や添加物に頼らず、地元で採れた新鮮な米ぬかだけを使用。自然そのものの温もりです。</p></div>
       <div class="commit"><p class="num">02</p><div class="commit-line"></div><h3>毎日育てる<br>発酵の手入れ</h3><p>発酵は生きもの。温度と状態を見ながら、毎日手を入れてベストなコンディションを保ちます。</p></div>
       <div class="commit"><p class="num">03</p><div class="commit-line"></div><h3>完全予約制の<br>プライベート空間</h3><p>他のお客様を気にせず、ご自分のペースで。ゆったりとした時間をお過ごしいただけます。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block effects" id="facility">
+  <div class="wrap">
+    <p class="label">FACILITY</p>
+    <h2 class="head">店内のご案内</h2>
+    <p class="lead">木の温もりに包まれた、ゆったりくつろげる空間。シャワールーム・パウダールームも完備しています。</p>
+    <div class="gal-grid">
+      <div class="gal"><img src="images/lounge2.jpg" alt="いちかの店内全景" loading="lazy"><p>木の温もりあふれる店内</p></div>
+      <div class="gal"><img src="images/lounge3.jpg" alt="待合スペースのソファと観葉植物" loading="lazy"><p>入浴前後にくつろげる待合スペース</p></div>
+      <div class="gal"><img src="images/shower.jpg" alt="清潔なシャワールーム" loading="lazy"><p>シャワールーム完備。汗もぬかもさっぱり</p></div>
+      <div class="gal"><img src="images/powder.jpg" alt="パウダールーム" loading="lazy"><p>身支度を整えられるパウダールーム</p></div>
+      <div class="gal"><img src="images/toilet.jpg" alt="清潔なお手洗い" loading="lazy"><p>清潔なお手洗い</p></div>
     </div>
   </div>
 </section>
@@ -367,6 +384,10 @@
         <p class="a">手ぶらでお越しいただけます。入浴用の下着セット（ショーツ・キャップ 他）は料金に含まれています。</p>
       </div>
       <div class="faq">
+        <p class="q">汗をかいた後、シャワーは使えますか？</p>
+        <p class="a">はい、清潔なシャワールームとパウダールームを完備しています。入浴後はぬかと汗をさっぱり流して、身支度を整えてお帰りいただけます。</p>
+      </div>
+      <div class="faq">
         <p class="q">時間はどのくらいかかりますか？</p>
         <p class="a">入浴は約15分。お着替えやカウンセリング、入浴後のひと休みを含めて、全体で40〜60分ほどを目安にお越しください。</p>
       </div>
@@ -391,6 +412,7 @@
           <dt>営業時間</dt><dd>10:00〜20:00</dd>
           <dt>定休日</dt><dd>不定休</dd>
           <dt>ご予約</dt><dd>完全予約制（お電話）</dd>
+          <dt>設備</dt><dd>シャワールーム・パウダールーム・待合スペース</dd>
           <dt>駐車場</dt><dd>あり</dd>
         </dl>
       </div>
