@@ -71,18 +71,6 @@ header{position:fixed;top:0;left:0;right:0;z-index:50;
 .page-head h1{font-size:clamp(28px,5vw,42px);font-weight:600;line-height:1.5}
 .page-head p{margin-top:14px;font-size:14.5px;color:var(--brown-soft)}
 
-/* news */
-.news-strip{background:var(--cream);border-bottom:1px solid var(--line);padding:16px 0}
-.news-strip .in{display:flex;gap:16px;align-items:baseline;font-size:14px;flex-wrap:wrap}
-.news-strip .tag{color:#fff;background:var(--clay);border-radius:999px;font-size:11px;padding:3px 12px;white-space:nowrap}
-.news-strip time{color:var(--clay);font-size:13px;font-weight:500;white-space:nowrap}
-.news-strip a.news-more{color:var(--clay);font-size:13px;margin-left:auto;white-space:nowrap}
-.news-list{max-width:760px;margin:0 auto}
-.news-item{display:flex;gap:24px;padding:24px 6px;border-bottom:1px solid var(--line);align-items:baseline}
-.news-item:first-child{border-top:1px solid var(--line)}
-.news-item time{font-size:13px;color:var(--clay);white-space:nowrap;font-weight:500}
-.news-item p{font-size:15px;color:var(--brown-soft)}
-
 /* section base */
 section.block{padding:100px 0}
 .label{text-align:center;font-size:13px;letter-spacing:.32em;color:var(--clay);margin-bottom:14px}
